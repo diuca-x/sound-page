@@ -1,17 +1,13 @@
-<html>
-<body>
+{% extends "base.html" %}
 
-    {%if name%}
-
+{% block content %}
     <h1>HElloooo  {{ name }}</h1>
-    {%else %}
+   
     <h1>HElloooo </h1>
-    {%endif%}
+    
 
 
 
-</body>
-</html>
-
+{% endblock content %}
 
 
