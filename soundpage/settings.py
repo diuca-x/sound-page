@@ -27,8 +27,8 @@ SECRET_KEY = 'django-insecure-wl9y495%!8rrb1!50d9jp6_6%y97uxl2tk(4bx&r2jc*q**)sy
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
-
+#edit this when you want to replace the admin login
+#LOGIN_URL=""
 # Application definition
 
 INSTALLED_APPS = [

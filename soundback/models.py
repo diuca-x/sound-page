@@ -22,7 +22,7 @@ class Genere(models.Model):
 
 
 class Track(models.Model): 
-    url = models.CharField(max_length=1000,null=False)
+    url = models.CharField(max_length=1000,null=False, unique=True)
     name = models.CharField(max_length=50,null=False)
     remix = models.BooleanField(null=False)
     generes = models.ManyToManyField(Genere)
