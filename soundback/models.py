@@ -16,7 +16,8 @@ class Track(models.Model):
     url = models.CharField(max_length=1000,null=False)
     name = models.CharField(max_length=50,null=False)
     remix = models.BooleanField(null=False)
-    genres = models.ManyToManyField(Genere)
+    generes = models.ManyToManyField(Genere)
+    show = models.BooleanField(null=False)
 
 
     #relationship con genere
