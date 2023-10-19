@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-from soundback.models import Track, Genere, Trackgen
+from soundback.models import Track, Genere
 # Create your views here.
 
 
