@@ -21,12 +21,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-wl9y495%!8rrb1!50d9jp6_6%y97uxl2tk(4bx&r2jc*q**)sy'
+SECRET_KEY = ("SECRET_KEY",'django-insecure-wl9y495%!8rrb1!50d9jp6_6%y97uxl2tk(4bx&r2jc*q**)sy')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = str(os.environ.get("DEBUG")) == "True"
 
 ALLOWED_HOSTS = []
+
+if not DEBUG:
+    ALLOWED_HOSTS += [os.environ.get("ALLOWED_HOST")] 
 #edit this when you want to replace the admin login
 #LOGIN_URL=""
 # Application definition
