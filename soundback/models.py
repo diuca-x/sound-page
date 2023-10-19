@@ -1,4 +1,7 @@
 from django.db import models
+from django.db.models import UniqueConstraint
+from django.db.models.functions import Lower
+
 
 # Create your models here.
 
@@ -7,10 +10,16 @@ from django.db import models
 
 
 class Genere(models.Model):
-    genere = models.CharField(max_length=50,null=False)
+    genere = models.CharField(max_length=50,null=False, unique=True,verbose_name=("genere") )
 
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(Lower('genere'), name='Genere already exists')
+        ]
+    
     def __str__(self):
         return self.genere
+
 
 class Track(models.Model): 
     url = models.CharField(max_length=1000,null=False)

@@ -9,6 +9,7 @@ from soundback.models import Track, Genere
 def hello (request): 
     
     #track = Track.objects.get(id=1)
+    
     return render(request, "hello.html",{"name":"asd"})
 
 def calculate():  
