@@ -20,6 +20,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("auth/", include("soundback.urls")),
-    path("api/", include("api.urls"))
+    path("api/", include("sound_api.urls"))
     
 ]
