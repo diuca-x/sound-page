@@ -28,7 +28,19 @@ class Track(models.Model):
     generes = models.ManyToManyField(Genere)
     show = models.BooleanField(null=False)
 
-
+    def serialize(self):
+        generes = []
+        for i in self.generes.all():
+            generes.append(i.genere)
+        
+        serialized ={
+            "url" : self.url,
+            "name" : self.name,
+            "remix" : self.remix,
+            "generes" : generes,
+            "show" : self.show,
+        }
+        return(serialized)
     #relationship con genere
 
 
