@@ -10,7 +10,7 @@ from soundback.serializer import TrackSerializer
 
 # Create your views here.
 @api_view(["GET"])
-def basic(request):
+def get_tracks(request):
     tracks = Track.objects.all()
     data = []
     for i in tracks:
@@ -20,3 +20,14 @@ def basic(request):
 
     
     return Response(data )
+
+@api_view(["POST"])
+def basic(request, *args,**kwargs):
+    serializer = TrackSerializer(data = request.data)
+    print(serializer.initial_data)
+    if serializer.is_valid(raise_exception=True):
+        #data = serializer.save()
+        print(serializer.data)
+        print("asd")
+        return Response(serializer.data)
+    return Response("asd")

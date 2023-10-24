@@ -10,7 +10,7 @@ from django.db.models.functions import Lower
 
 
 class Genere(models.Model):
-    genere = models.CharField(max_length=50,null=False, unique=True,verbose_name=("genere") )
+    genere = models.CharField(max_length=50,null=False, unique=True,verbose_name=("genere"), blank=False )
 
     class Meta:
         constraints = [
@@ -22,8 +22,8 @@ class Genere(models.Model):
 
 
 class Track(models.Model): 
-    url = models.CharField(max_length=1000,null=False, unique=True)
-    name = models.CharField(max_length=50,null=False)
+    url = models.CharField(max_length=1000,null=False, unique=True, blank=False)
+    name = models.CharField(max_length=50,null=False, blank=False)
     remix = models.BooleanField(null=False)
     generes = models.ManyToManyField(Genere)
     show = models.BooleanField(null=False)
