@@ -3,3 +3,10 @@ django-dotenv
 #psycopg2-binary
 
 #change to go in prod
+
+#django
+#djangorestframework    
+#django
+#pyyaml
+#requests
+#django-cors-headers
