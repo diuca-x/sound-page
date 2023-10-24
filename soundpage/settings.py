@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',  
     "soundback",
     "sound_api",
+    "rest_framework" 
     
 ]
 
