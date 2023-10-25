@@ -10,7 +10,7 @@ from django.db.models.functions import Lower
 
 
 class Genere(models.Model):
-    genere = models.CharField(max_length=50,null=False, unique=True,verbose_name=("genere"), blank=False )
+    genere = models.CharField(max_length=50,null=False, unique=True,verbose_name=("genere"), blank=False)
 
     class Meta:
         constraints = [
