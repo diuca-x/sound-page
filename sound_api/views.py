@@ -2,7 +2,7 @@
 import json
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-from rest_framework import generics
+from rest_framework import generics, mixins
 
 from soundback.models import Track
 from soundback.serializer import TrackSerializer
@@ -45,3 +45,17 @@ class TrackCreateAPIView(generics.CreateAPIView):
     def perform_create(self, serializer):
         print(serializer.validated_data)
         serializer.save()
+    
+class TrackMixinView(mixins.ListModelMixin,mixins.RetrieveModelMixin,mixins.CreateModelMixin,generics.GenericAPIView):
+    queryset = Track.objects.all()
+    serializer_class = TrackSerializer
+    lookup_field="pk"
+    
+    def get(self,request,*args,**kwargs):
+        id = kwargs.get("pk")
+        if id is not None:
+            return self.retrieve(request,*args,**kwargs)
+        return self.list(request, *args, **kwargs)
+    
+    def post(self,request,*args,**kwargs):
+        return self.create(request,*args,**kwargs)
