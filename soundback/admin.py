@@ -4,9 +4,11 @@ from django.contrib import admin
 from .models import Track,Genere
 
 class TrackAdmin(admin.ModelAdmin):
+    search_fields = ['name']  
     list_display = ["name"]
     list_filter = ["generes", "show","name", "remix"]
 class GenereAdmin(admin.ModelAdmin):
+    search_fields = ['genere']  
     list_display = ["genere"]
     list_filter = ["genere"]
     
