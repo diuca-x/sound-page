@@ -28,4 +28,4 @@ class TrackCreateAPIView(generics.CreateAPIView):
 class TrackListApiView(generics.ListAPIView):
     queryset=Track.objects.all()
     serializer_class = TrackSerializer
-    permission_classes = [isStaffEditorPermission]  
+    permission_classes = [permissions.IsAdminUser, isStaffEditorPermission]  
