@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 
 
@@ -16,17 +15,12 @@ function App() {
   
   
   return (
-    <div className='cont'>
+    <div className=' cont '>
         <BrowserRouter basename={basename}>
-            
-                
                 <Routes>
-                    <Route element={<Home />} path="/" />  
-                    {/*<Route element={<Trivia />} path="/trivia" /> */}  
+                    <Route element={<Home />} path="/" />   
                     <Route element={<h1>Not found!</h1>} />
-                </Routes>
-                
-            
+                </Routes>   
         </BrowserRouter>
     </div>
 );
