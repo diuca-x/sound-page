@@ -1,33 +1,55 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/navbar";
 import "../styles/home.css";
+import computadora from "../img/computadora.png"
 
 const Home = () =>{
 
-    const navigate = useNavigate()
-
+    const knowMoreRef = useRef(null)
+    const scrollToKnowMore = () => {
+        if (knowMoreRef.current) {
+          knowMoreRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
 
     return(
+        <>
         <div className="home-container  "> 
             <Navbar/>
-            <div className=" text-start mt-5 pt-5 ms-5 ps-5 border border-primary home_content_container">
+            <div className=" text-start mt-sm-5 pt-sm-5 ms-sm-5 ps-sm-5  home_content_container">
                 <h1>¡Descubre tu pasion por la Produccion Musical con Ableton Live!</h1>
                 <h3 className="mt-4">Y preparate para firmar con una discografia en tan solo un mes!</h3>
                 <button type="button" className="btn btn-primary rounded-pill contact_btn mt-5">Contactarme</button>  
                 <div className="know_more">
                     <h4 className="know ">¿Queres saber mas?</h4> 
                     
-                    <div className="arrow_div">
-                        <a className="arrow_span" href="#">
-                            <span class="bottom"><i class="fa-solid fa-angle-down fa-2xl  "></i></span>
-                        </a>
+                    <div className="arrow_div  mt-3 p-2">
+                        <i class="fa-solid fa-angle-down fa-2xl arrow" onClick={scrollToKnowMore}></i>   
                     </div>
                     
                 </div>
             </div>    
-            
         </div>
+        <div className="row know_more_container m-0 p-0" ref={knowMoreRef}>
+                <div className="col-sm-6 computer_container ">
+                    <div className="computer_img_box ">
+                        <img src={computadora} className="computer_img" alt="..."/>
+                    </div>
+                </div>
+                <div className="col-sm-6 p-5 about_text">
+                    <p>Si alguna vez soñaste con convertirte en un productor musical y ver tus pistas en los 
+                        escenarios mas grandes del mundo, ¡estas en el lugar adecuado!
+                    </p>
+                    <p>
+                        La produccion musical es un arte emocionante y creativo que te permite dar vida a tus
+                        ideas sonoras. ¿Y que mejor manera de empezar que con Ableton Live, una de las plataformas mas potentes y
+                        versatiles a del mundo para la creacion musical?
+                    </p>
+                </div>
+        </div>
+        
+        </>
     )
 }
 
