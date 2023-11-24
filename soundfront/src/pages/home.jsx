@@ -41,8 +41,8 @@ const Home = () =>{
                 <button type="button" className="btn btn-primary rounded-pill contact_btn mt-5">Contactarme</button>  
                 <div className="know_more">
                     <h4 className="know ">¿Queres saber mas?</h4>  
-                    <div className="arrow_div  mt-3 p-2">
-                        <i className="fa-solid fa-angle-down fa-2xl arrow" onClick={() => {toRef("know_more")}}></i>   
+                    <div className="arrow_div  mt-3 p-2" onClick={() => {toRef("know_more")}}>
+                        <i className="fa-solid fa-angle-down fa-2xl arrow" ></i>   
                     </div>
                     
                 </div>
