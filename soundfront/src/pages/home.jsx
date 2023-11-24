@@ -6,11 +6,12 @@ import "../styles/expect.css";
 
 import computadora from "../img/computadora.png"
 
+
 const Home = () =>{
 
     const knowMoreRef = useRef(null)
     const ExpectRef = useRef(null)
-    const offcanvasRef = useRef(null);
+    
 
 
     const toRef = (section) => {
@@ -44,7 +45,6 @@ const Home = () =>{
                     <div className="arrow_div  mt-3 p-2" onClick={() => {toRef("know_more")}}>
                         <i className="fa-solid fa-angle-down fa-2xl arrow" ></i>   
                     </div>
-                    
                 </div>
             </div>    
         </div>

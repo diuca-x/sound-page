@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/home.css"
 
+import logo from "../img/logo.png"
 
 const Navbar = ({toRef}) => {
     
@@ -21,7 +22,7 @@ const Navbar = ({toRef}) => {
         <>
             <nav className="navbar   " data-bs-backdrop="static">
                 <div className="container-fluid ">
-                    <h1 className="navbar-brand text-light" href="#">BassLineage</h1>
+                    <h1 className="navbar-brand text-light" href="#"><img src={logo} className="logo" alt="..."/></h1>
                     <button className="navbar-toggler  custom-toggler " type="button" id="OpenMenu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon  "></span>
                     </button>
