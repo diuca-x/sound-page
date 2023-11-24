@@ -1,0 +1,61 @@
+
+.expect_container{
+    background-color: #161a3b;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.expect_col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.expect_title{
+    position: relative;
+    width: 50%;
+}
+.expect_title::after{
+    
+    content: '';
+    display: flex;
+    position: absolute;
+    left: 50%;
+    margin-top: 2rem;
+    transform: translateX(-50%);
+    width: 20%; /* Width of the border */
+    border-bottom: 2px solid #d10359; /* Border properties */
+        
+}
+
+.expect_text{
+    width: 60%;
+    margin-top: 6rem;
+    font-size: 1.5rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
