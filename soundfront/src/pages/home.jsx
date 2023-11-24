@@ -63,8 +63,8 @@ const Home = () =>{
                     </p>
                 </div>
         </div>
-        <div className="row expect_container " ref={ExpectRef} >
-            <div className="col  mt-5  expect_col">
+        <div className="row expect_container m-0" ref={ExpectRef} >
+            <div className="col  mt-3  expect_col">
                  <h2 className="expect_title">¿Que puede esperar de estudiar produccion musical en ableton live con nosotros?</h2>   
             
             
@@ -73,7 +73,7 @@ const Home = () =>{
                     la musica electronica y la produccion contemporanea. Aprenderas desde lo basico hasta tecnicas avanzadas
                     para crear pistas asombrosas que capturaran la esencia de tu creatividad.
                  </p>
-                 <p className="expect_text mt-5">
+                 <p className="expect_text mb-5 ">
                     Pero eso no es todo. No nos detenemos en la creacion de las pistas, tambien te enseñaremos las complejidades
                     del proceso de mezcla y masterizacion, poniendo un enfasis especial en la calidad sonora. Exploraremos el uso
                     experto de compresores, ecualizadores y exitacion hipocaustica para garantizar que cada nota, cada ritmo

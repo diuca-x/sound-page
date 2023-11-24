@@ -36,8 +36,7 @@ const Navbar = ({toRef}) => {
                             <p className=" nav_title">Home</p>
                         </li>
                         <li className="nav-item">
-                            
-                            <p className="nav-link text-light" href="#" data-bs-dismiss="offcanvas" aria-label="Close"  onClick={(e) => {handleClick(e,"expect")}}>¿Que puedes esperar de estudiar produccion musical el Ableton Live con nosotros?</p>
+                            <a className="nav-link text-light" href="#" data-bs-dismiss="offcanvas" aria-label="Close"  onClick={(e) => {handleClick(e,"expect")}}>¿Que puedes esperar de estudiar produccion musical el Ableton Live con nosotros?</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link text-light" href="#">¿Que ofrecemos adicionalmente?</a>
