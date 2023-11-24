@@ -10,6 +10,8 @@ const Home = () =>{
 
     const knowMoreRef = useRef(null)
     const ExpectRef = useRef(null)
+    const offcanvasRef = useRef(null);
+
 
     const toRef = (section) => {
         let ref
@@ -26,11 +28,13 @@ const Home = () =>{
             ref.current.scrollIntoView({ behavior: 'smooth' });
           }
       };
+      
+    
 
     return(
         <>
         <div className="home-container"> 
-            <Navbar toRef = {toRef}/>
+            <Navbar toRef = {toRef} />
             <div className=" text-start mt-sm-5 pt-sm-5 ms-sm-5 ps-sm-5  home_content_container">
                 <h1>¡Descubre tu pasion por la Produccion Musical con Ableton Live!</h1>
                 <h3 className="mt-4">Y preparate para firmar con una discografia en tan solo un mes!</h3>
