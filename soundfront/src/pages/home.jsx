@@ -31,17 +31,15 @@ const Home = () =>{
                 </div>
             </div>    
         </div>
-        <div className="row know_more_container m-0 p-0" ref={knowMoreRef}>
-                <div className="col-sm-6 computer_container ">
-                    <div className="computer_img_box ">
-                        <img src={computadora} className="computer_img" alt="..."/>
-                    </div>
+        <div className="row know_more_container m-0 " ref={knowMoreRef}>
+                <div className="col-sm-6  computer_container ">
+                    <img src={computadora} className="computer_img" alt="..."/>
                 </div>
-                <div className="col-sm-6 p-5 about_text">
-                    <p>Si alguna vez soñaste con convertirte en un productor musical y ver tus pistas en los 
+                <div className="col-sm-6 about_text">
+                    <p className="about">Si alguna vez soñaste con convertirte en un productor musical y ver tus pistas en los 
                         escenarios mas grandes del mundo, ¡estas en el lugar adecuado!
                     </p>
-                    <p>
+                    <p className="about">
                         La produccion musical es un arte emocionante y creativo que te permite dar vida a tus
                         ideas sonoras. ¿Y que mejor manera de empezar que con Ableton Live, una de las plataformas mas potentes y
                         versatiles a del mundo para la creacion musical?
