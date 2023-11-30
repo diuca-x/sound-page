@@ -82,6 +82,29 @@ const Home = () =>{
             </div>
             
         </div>
+        <div className="row additional_container m-0" ref={ExpectRef} >
+            <div className="col  mt-3  expect_col">
+                <h2 className="expect_title">¿Que ofrecemos adicionalmente?</h2>   
+            
+                <div className="row">
+                    <div className="col-5"> 
+                    
+                    </div>
+                    <div className="col-5"> 
+                    
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-5"> 
+                    
+                    </div>
+                    <div className="col-5"> 
+                    
+                    </div>
+                </div>
+            </div>
+            
+        </div>
         
         </>
     )
