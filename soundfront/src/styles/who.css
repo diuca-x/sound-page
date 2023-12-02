@@ -1,0 +1,45 @@
+.who_container{
+    background-image: url("../img/piano.jpg");
+    background-size: cover;
+    background-position:50% 20%;
+    height: 100vh;
+}
+.who_title{
+    position: relative;
+    margin-bottom: 7rem;
+    width: 50%;
+}
+.who_title::after{
+    
+    content: '';
+    display: flex;
+    position: absolute;
+    left: 50%;
+    margin-top: 1rem;
+    transform: translateX(-50%);
+    width: 20%; /* Width of the border */
+    border-bottom: 2px solid #d10359; /* Border properties */
+        
+}
+.who_col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact_who_btn, .contact_who_btn:after, .contact_who_btn:hover{
+    background-color: #d10359;
+}
+
+.who_buton_row{
+    width: 15%;
+}
+
+.who_first_row{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+}
+
+.who_text{
+    font-size: 1.5rem;
+}
