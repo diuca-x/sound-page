@@ -14,8 +14,9 @@ const Home = () =>{
 
     const knowMoreRef = useRef(null)
     const ExpectRef = useRef(null)
-    
-
+    const AdditionalRef = useRef(null)
+    const WhoRef = useRef(null)
+    const ExamplesRef = useRef(null)
 
     const toRef = (section) => {
         let ref
@@ -25,6 +26,15 @@ const Home = () =>{
                 break
             case 'know_more':
                 ref = knowMoreRef
+                break;
+            case "additional":
+                ref = AdditionalRef
+                break;
+            case 'who':
+                ref = WhoRef
+                break;
+            case "example":
+                ref = ExamplesRef
                 break;
         }
         
@@ -85,7 +95,7 @@ const Home = () =>{
             </div>
             
         </div>
-        <div className="row additional_container m-0"  >
+        <div className="row additional_container m-0" ref={AdditionalRef} >
             <div className="col  aditional_col">
                 <div className="row w-100 d-flex justify-content-center">
                     <h2 className="aditional_title mt-5">¿Que ofrecemos adicionalmente?</h2>   
@@ -130,10 +140,10 @@ const Home = () =>{
             </div>
             
         </div>
-        <div className="banner_box m-0 p-0">
+        <div className="banner_box m-0 p-0" >
             
         </div>
-        <div className="row who_container m-0"  >
+        <div className="row who_container m-0"  ref={WhoRef}>
             <div className="col  who_col ">
                 <div className="row w-100 d-flex justify-content-center">
                     <h2 className=" mt-5">¿Quien puede estudiar Produccion Musical con nosotros?</h2>
@@ -159,7 +169,7 @@ const Home = () =>{
             </div>
             
         </div>
-        <div className="row examples_container m-0">
+        <div className="row examples_container m-0" ref={ExamplesRef}>
             <div className="col examples_col">
                 <div className="row w-100 d-flex justify-content-center">
                     <h2 className=" example_title mt-5">¿Porque Ableton Live?</h2>

@@ -40,19 +40,19 @@ const Navbar = ({toRef}) => {
                             <a className="nav-link text-light" href="#" data-bs-dismiss="offcanvas" aria-label="Close"  onClick={(e) => {handleClick(e,"expect")}}>¿Que puedes esperar de estudiar produccion musical el Ableton Live con nosotros?</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-light" href="#">¿Que ofrecemos adicionalmente?</a>
+                            <a className="nav-link text-light" href="#" data-bs-dismiss="offcanvas" aria-label="Close"  onClick={(e) => {handleClick(e,"additional")}}>¿Que ofrecemos adicionalmente?</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-light" href="#">¿Quien puede estudiar Produccion Musical con nosotros?</a>
+                            <a className="nav-link text-light" href="#" data-bs-dismiss="offcanvas" aria-label="Close"  onClick={(e) => {handleClick(e,"who")}}>¿Quien puede estudiar Produccion Musical con nosotros?</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-light" href="#">¿Porque Ableton Live?</a>
+                            <a className="nav-link text-light" href="#" data-bs-dismiss="offcanvas" aria-label="Close"  onClick={(e) => {handleClick(e,"example")}}>¿Porque Ableton Live?</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-light" href="#">Ejemplos realizados por alumnos</a>
+                            <a className="nav-link text-light" href="#" data-bs-dismiss="offcanvas" aria-label="Close"  >Ejemplos realizados por alumnos</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-light" href="#">Contacto</a>
+                            <a className="nav-link text-light" href="#" data-bs-dismiss="offcanvas" aria-label="Close"  >Contacto</a>
                         </li>
                         
                         </ul>
