@@ -111,7 +111,7 @@ const Home = () =>{
                 </div>
                 <div className="row aditional_row">
                     <div className="col-5 additional_content_box  "> 
-                        <h3 className="mt-3 aditional_subtitle">Samples<br/>exclusivo</h3>
+                        <h3 className="mt-3 aditional_subtitle">Samples<br/> exclusivo</h3>
                         <p className="mt-3 aditional_text">
                             Al inscribirte, recibiras una coleccion exclusiva de samples seleccionados cuidadosamente para inspirarte
                             desde el primer dia. Estos samples te daran una base solida para comenzar tus primeras 
@@ -119,7 +119,7 @@ const Home = () =>{
                         </p>
                     </div>
                     <div className="col-5 additional_content_box "> 
-                        <h3 className="mt-3 aditional_subtitle">Aprendizaje<br/>rapido</h3>
+                        <h3 className="mt-3 aditional_subtitle">Aprendizaje<br/> rapido</h3>
                         <p className="mt-3 aditional_text">
                             En tan solo un mes, te garantizamos que habras dominado las herramientas basicas de Ableton Live. Nuestro enfoque
                             pratico y personalizado te permitira progresar rapidamente y comenzar a crear tus propias pistas de inmediato
@@ -128,14 +128,14 @@ const Home = () =>{
                 </div>
                 <div className="row aditional_row ">
                     <div className="col-5 additional_content_box "> 
-                        <h3 className="mt-3 aditional_subtitle">Flexibilidad<br/>total</h3>
+                        <h3 className="mt-3 aditional_subtitle">Flexibilidad<br/> total</h3>
                         <p className="mt-3 aditional_text">
                             Creemos en el poder de la autonomia del estudiante. Por eso, tu decides hasta cuando quieres tener clases. Te
                             ofrecemos la flexibiliadad de programar tus lecciones de acuerdo a tu propio ritmo y agenda
                         </p>
                     </div>
                     <div className="col-5 additional_content_box "> 
-                        <h3 className="mt-3 aditional_subtitle">Variedad de <br/>opciones</h3>
+                        <h3 className="mt-3 aditional_subtitle">Variedad de <br/> opciones</h3>
                         <p className="mt-3 aditional_text">
                             Si prefieres explorar por tu cuenta primero, tambien ofrecemos acceso a una variedad de cursos pregrabados de 
                             diferentes generos e industrias, haciendo hincapie en todos los subgeneros de la musica electronica. Asi puedes

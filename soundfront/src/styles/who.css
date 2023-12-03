@@ -78,7 +78,7 @@
     }
     .who_container{
         background-color: #05051b;
-        height: 100vh;
+        height: auto;
     }
     .who_col{
         display: flex;
@@ -95,6 +95,8 @@
         height: auto;
         padding-bottom: 3rem;
     }
+   
+    
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
