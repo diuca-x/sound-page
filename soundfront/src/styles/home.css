@@ -6,9 +6,7 @@
     
 }
 
-.logo{
-  height: 2.5rem;
-}
+
 
 
 
@@ -58,11 +56,7 @@ h1,h2,h3,h4,p{
   background-size: cover;
   background-position:50% 60%;
 }
-.footer{
-  background-color: #05051b ;
-  height: 7rem;
-  border-top: solid 3px #6efbff;
-}
+
 
 
 /* Extra small devices (phones, 600px and down) */
@@ -96,9 +90,9 @@ h1,h2,h3,h4,p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1rem;
   }
   /*--------------------------------------- know more start*/
   .know_more_container{
@@ -107,8 +101,7 @@ h1,h2,h3,h4,p{
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around;
-    
-    
+    padding-top: 1rem;
   }
   
   .about{
@@ -124,8 +117,12 @@ h1,h2,h3,h4,p{
     padding-left: 2rem;
     padding-right: 2rem;
   }
+  
 
   /*--------------------------------------- know more end*/
+  .logo{
+    height: 1.5rem;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -178,6 +175,9 @@ h1,h2,h3,h4,p{
   }
 
   /*--------------------------------------- know more end*/
+  .logo{
+    height: 2.5rem;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

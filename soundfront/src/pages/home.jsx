@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 import "../styles/home.css";
 import "../styles/expect.css";
 import "../styles/aditional.css";
@@ -19,6 +20,8 @@ const Home = () =>{
     const AdditionalRef = useRef(null)
     const WhoRef = useRef(null)
     const ExamplesRef = useRef(null)
+    const ContactRef = useRef(null)
+    
 
     const toRef = (section) => {
         let ref
@@ -38,6 +41,9 @@ const Home = () =>{
             case "example":
                 ref = ExamplesRef
                 break;
+            case "contact":
+                ref = ContactRef
+                break
         }
         
         if (ref && ref.current) {
@@ -50,7 +56,7 @@ const Home = () =>{
     return(
         <>
         <div className="container-fluid m-0 p-0">
-        <div className="home-container"> 
+        <div className="home-container m-0"> 
         <Navbar toRef = {toRef} />
             <div className=" text-start mt-sm-5 pt-sm-5 ms-sm-5 ps-sm-5  home_content_container">
                 <h1>¡Descubre tu pasion por la Produccion Musical con Ableton Live!</h1>
@@ -138,7 +144,7 @@ const Home = () =>{
                     </div>
                 </div>
                 <div className="row aditional_buton_row">
-                    <button type="button" className="btn btn-primary rounded-pill contact_aditional_btn ">Quiero hacer el curso!</button>  
+                    <button type="button" className="btn btn-primary rounded-pill contact_aditional_btn ">!Quiero hacer el curso!</button>  
                 </div>
             </div>
             
@@ -152,7 +158,7 @@ const Home = () =>{
                     <h2 className=" mt-5">¿Quien puede estudiar Produccion Musical con nosotros?</h2>
                     <h2 className=" who_title mt-2">¡Todos pueden!</h2>     
                 </div>
-                <div className="row who_first_row">
+                <div className="row who_first_row ">
                     <p className="who_text">
                         En nuestro curso, creemos firmemente que la musica y la produccion no tienen barreras. No importa tu nivel
                         de experiencia o habilidad musical. Todos tienen la capacidad de aprender y crecer. Nuestros instrucores son
@@ -160,7 +166,7 @@ const Home = () =>{
                         guiarte en cada paso del camino 
                     </p>
                 </div>
-                <div className="row who_first_row mt-5">
+                <div className="row who_first_row mt-sm-5 mt-3">
                     <p className="who_text">
                         Recuerda, los grandes productores no nacen ¡se hacen! Con la dedicacion adecuada y la guia correcta, puedes
                         llevar tus sueños musicales mas alla de lo que alguna vez imaginaste
@@ -190,18 +196,16 @@ const Home = () =>{
                 <div className="row contact_examples_row">
                     <button type="button" className="btn btn-primary rounded-pill contact_examples_btn ">Escucha los ejemplos</button>  
                 </div>
-                <div className="row mt-5">
-                    <h3 className="mt-5">
+                <div className="row mt-5 mb-5">
+                    <h3 className="mt-sm-5 ">
                         ¡Unete a nosotros y preparate para transofrmar tus sueños musicales en realidad!
                     </h3>
                 </div>
-                
-
             </div>
         </div>
-        <div className="row contact_container m-0" ref={ExamplesRef}>
+        <div className="row contact_container m-0" ref={ContactRef}>
             <div className="col-5 contact_form_col ">
-                <div className="contact_form p-5  ">
+                <div className="contact_form p-sm-5 p-4 ">
                     <div class="mb-3">
                         <input type="text" class="form-control contact_input rounded-pill" id="exampleFormControlInput1" placeholder="Nombre y Apellido"/>
                     </div>
@@ -219,22 +223,22 @@ const Home = () =>{
                     </div>
                 </div>
             </div>
-            <div className="col-3 contact_info ms-5">
+            <div className="col-3 contact_info ms-sm-5">
                 <h2 className="contact_title">Contactanos</h2>
                 <div className="">
-                    <li className="d-flex">
+                    <li className=" contact_item">
                         <div class="circle me-2">
                             <i class="fa-regular fa-envelope icon"></i>    
                         </div>
                         <p>email@mail.com</p>
                     </li>
-                    <li className="d-flex">
+                    <li className=" contact_item">
                         <div class="circle me-2">
                             <i class="fa-brands fa-whatsapp icon"></i> 
                         </div>
                         <p>xxx xxx xxx xx</p>
                     </li>
-                    <li className="d-flex">
+                    <li className="contact_item">
                         <div class="circle me-2">
                         <i class="fa-solid fa-location-dot icon"></i>
                         </div>
@@ -246,25 +250,7 @@ const Home = () =>{
         </div>
 
         </div>
-        <div class="container-fluid footer pt-3 m-0">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center mx-5 ">
-                <div class="col-4 d-flex align-items-center">
-                    <h1 className="" href="#"><img src={logo} className="logo" alt="..."/></h1>
-                </div>
-
-                <ul class="nav col-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3">
-                    <i class="fa-brands fa-facebook fa-xl text-white"></i>
-                </li>
-                <li class="ms-3">
-                    <i class="fa-brands fa-instagram fa-xl text-white"></i>
-                </li>
-                <li class="ms-3">
-                    <i class="fa-brands fa-linkedin-in fa-xl text-white"></i>
-                </li>
-                </ul>
-            </footer>
-        </div>
+        <Footer/>
         
         </>
     )

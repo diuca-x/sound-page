@@ -1,20 +1,11 @@
-.additional_container{
-    background-image: url("../img/piano.jpg");
-    background-size: cover;
-    background-position:50% 20%;
-    height: 100vh;
-}
+
 .aditional_col{
     display: flex;
     flex-direction: column;
     align-items: center;
    
 }
-.aditional_title{
-    position: relative;
-    margin-bottom: 7rem;
-    width: 50%;
-}
+
 .aditional_title::after{
     
     content: '';
@@ -28,27 +19,99 @@
         
 }
 
-.aditional_row{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 30%;
-    margin-bottom: 3rem;
-}
-.additional_content_box{
-    width: 30%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 3rem;
-    background-color: rgba(5, 5, 27, 0.7) ;
-   
-}
+
+
 
 .contact_aditional_btn, .contact_aditional_btn:after, .contact_aditional_btn:hover{
     background-color: #d10359;
 }
 
-.aditional_buton_row{
-    width: 15%;
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 575px) {
+    .additional_container{
+        background-image: url("../img/piano.jpg");
+        background-size: cover;
+        background-position:30% 20%;
+        height: auto;
+    }
+    .aditional_title{
+        position: relative;
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+    .aditional_row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+    .additional_content_box{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        background-color: rgba(5, 5, 27, 0.7) ;
+        margin-top: 1rem;
+       
+    }
+    .aditional_buton_row{
+        width: 80%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .contact_aditional_btn{
+        height: 3rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 576px) {
+    .aditional_title{
+        position: relative;
+        margin-bottom: 7rem;
+        width: 50%;
+    }
+    .additional_container{
+        background-image: url("../img/piano.jpg");
+        background-size: cover;
+        background-position:50% 20%;
+        height: 100vh;
+    }
+    .aditional_row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30%;
+        margin-bottom: 3rem;
+    }
+    .additional_content_box{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 3rem;
+        background-color: rgba(5, 5, 27, 0.7) ;
+       
+    }
+    .aditional_buton_row{
+        width: 15%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
 }

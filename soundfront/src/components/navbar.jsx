@@ -20,7 +20,7 @@ const Navbar = ({toRef}) => {
     
     return (
         <>
-            <nav className="navbar   " data-bs-backdrop="static">
+            <nav className="navbar " data-bs-backdrop="static">
                 <div className="container-fluid ">
                     <h1 className="navbar-brand text-light" href="#"><img src={logo} className="logo" alt="..."/></h1>
                     <button className="navbar-toggler  custom-toggler " type="button" id="OpenMenu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
@@ -52,7 +52,7 @@ const Navbar = ({toRef}) => {
                             <a className="nav-link text-light" href="#" data-bs-dismiss="offcanvas" aria-label="Close"  >Ejemplos realizados por alumnos</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-light" href="#" data-bs-dismiss="offcanvas" aria-label="Close"  >Contacto</a>
+                            <a className="nav-link text-light" href="#" data-bs-dismiss="offcanvas" aria-label="Close" onClick={(e) => {handleClick(e,"contact")}} >Contacto</a>
                         </li>
                         
                         </ul>

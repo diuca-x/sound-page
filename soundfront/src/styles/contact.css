@@ -1,33 +1,4 @@
-.contact_container{
-    background-image: url("../img/littlepiano.jpg");
-    background-size: cover;
-    background-position:50% 20%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-}
 
-.contact_form_col{
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.contact_form{
-    background-color: rgba(5, 5, 27, 0.7) ;
-    margin-top: 30%;
-}
-.submit_contact, .submit_contact:after, .submit_contact:hover{
-    background-color: #d10359;
-    width: 30%;
-}
-
-
-.submit_col{
-    display: flex;
-    margin-top: 3rem;
-   
-}
 .contact_input{
     border: #d10359 2px solid;
     background-color: black;
@@ -45,19 +16,9 @@
     height: 8rem;
 }
 
-.contact_info{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
 
-}
 
-.contact_title{
-    position: relative;
-    margin-bottom: 3rem;
-    width: 50%;
-    margin-top: 50%;
-}
+
 .contact_title::after{
     
     content: '';
@@ -84,3 +45,121 @@
     font-size: 0.9rem; /* Change the icon size as needed */
     color: black;
   }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 575px) {
+    .contact_container{
+        background-image: url("../img/littlepiano.jpg");
+        background-size: cover;
+        background-position:50% -20rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .contact_form_col{
+        width: 100%;
+    }
+    .contact_form{
+        background-color: rgba(5, 5, 27, 0.7) ;
+        margin-top: 2rem;
+        padding: 0;
+        margin-bottom: 3rem;
+    }
+    .submit_contact, .submit_contact:after, .submit_contact:hover{
+        background-color: #d10359;
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    
+    
+    .submit_col{
+        display: flex;
+        margin-top: 3rem;
+       
+    }
+    .contact_info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    
+    }
+    .contact_title{
+        position: relative;
+        margin-bottom: 3rem;
+        width: 50%;
+        margin-top: 3rem;
+    }
+    .contact_item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact_title::after{
+        left: 50%;
+        width: 40%; /* Width of the border */            
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 576px) {
+    .contact_container{
+        background-image: url("../img/littlepiano.jpg");
+        background-size: cover;
+        background-position:50% 20%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+    .contact_form_col{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .contact_form{
+        background-color: rgba(5, 5, 27, 0.7) ;
+        margin-top: 30%;
+    }
+    .submit_contact, .submit_contact:after, .submit_contact:hover{
+        background-color: #d10359;
+        width: 30%;
+    }
+    
+    
+    .submit_col{
+        display: flex;
+        margin-top: 3rem;
+       
+    }
+    .contact_info{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    
+    }
+    .contact_title{
+        position: relative;
+        margin-bottom: 3rem;
+        width: 50%;
+        margin-top: 50%;
+    }
+    .contact_item{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
