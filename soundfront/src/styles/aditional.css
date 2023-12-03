@@ -72,32 +72,48 @@
     .aditional_title{
         position: relative;
         margin-bottom: 7rem;
-        width: 50%;
+        width: 100%;
+        font-size: 2.5rem;
     }
     .additional_container{
         background-image: url("../img/piano.jpg");
         background-size: cover;
         background-position:50% 20%;
-        height: 100vh;
+        
     }
     .aditional_row{
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 30%;
         margin-bottom: 3rem;
     }
     .additional_content_box{
-        width: 30%;
+        
         height: 100%;
         display: flex;
         flex-direction: column;
-        margin-left: 3rem;
         background-color: rgba(5, 5, 27, 0.7) ;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
        
     }
+    .aditional_text{
+        margin-bottom: 2rem;
+    }
     .aditional_buton_row{
-        width: 15%;
+        width: 50%;
+        margin-bottom: 2rem;
+        
+    }
+    .contact_aditional_btn{
+        
+        padding: .8rem;
+        text-align: center;
+        height: 3.5rem;
+        font-size: 1.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 

@@ -1,10 +1,5 @@
 
-.expect_col{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
+
 .expect_title{
     position: relative;
     width: 50%;
@@ -30,11 +25,19 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 576px) {
+    .expect_col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    
+    }
     
     .expect_title{
         position: relative;
         width: 85%;
         margin-bottom: 3rem;
+        margin-top: 2rem;
     }
     .expect_text{
         padding-left: 1rem;
@@ -42,15 +45,15 @@
         width: auto;
         font-size: 1.2rem;
     }
+        
+    .expect_container{
+        background-color: #161a3b;
     
-.expect_container{
-    background-color: #161a3b;
-   
-    display: flex;
-    flex-direction: column;
-    
-    
-}
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
     
 }
 
@@ -60,20 +63,29 @@
         position: relative;
         width: 85%;
         font-size: 2.5rem;
+        
     }
     .expect_text{
         width: 85%;
         font-size: 1.5rem;
     }
     
-.expect_container{
-    background-color: #161a3b;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+    .expect_container{
+        background-color: #161a3b;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .expect_col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
     
-    
-}
 
 }
 

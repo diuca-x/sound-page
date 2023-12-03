@@ -59,10 +59,16 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 576px) {
+    h2{
+
+        font-size: 2.5rem;
+
+    }
     .who_title{
         position: relative;
-        margin-bottom: 7rem;
-        width: 50%;
+        margin-bottom: 4rem;
+        
+       
     }
     .who_text{
         font-size: 1.5rem;
@@ -76,6 +82,7 @@
         flex-direction: column;
         align-items: center;
     }
+    
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
