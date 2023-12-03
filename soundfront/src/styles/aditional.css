@@ -19,7 +19,9 @@
         
 }
 
-
+.aditional_subtitle{
+    color: #6efbff;
+}
 
 
 .contact_aditional_btn, .contact_aditional_btn:after, .contact_aditional_btn:hover{
@@ -119,15 +121,28 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    
+    .aditional_text{
+       
+        font-size: 1.2rem;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    
+    .aditional_text{
+       
+        font-size: 1.4rem;
+    }
+    .aditional_buton_row{
+        width: 30%;
+        margin-bottom: 2rem;  
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    
+    .aditional_buton_row{
+        width: 23%;
+        
+    }
 }

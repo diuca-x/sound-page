@@ -75,12 +75,12 @@ const Home = () =>{
                     <img src={computadora} className="computer_img" alt="..."/>
                 </div>
                 <div className="col-sm-6 about_text">
-                    <p className="about">Si alguna vez soñaste con convertirte en un productor musical y ver tus pistas en los 
-                        escenarios mas grandes del mundo, ¡estas en el lugar adecuado!
+                    <p className="about"><strong>Si alguna vez soñaste con convertirte en un productor musical y ver tus pistas en los 
+                        escenarios mas grandes del mundo, ¡estas en el lugar adecuado!</strong>
                     </p>
                     <p className="about">
                         La produccion musical es un arte emocionante y creativo que te permite dar vida a tus
-                        ideas sonoras. ¿Y que mejor manera de empezar que con Ableton Live, una de las plataformas mas potentes y
+                        ideas sonoras. ¿Y que mejor manera de empezar que con <strong>Ableton Live</strong>, una de las plataformas mas potentes y
                         versatiles a del mundo para la creacion musical?
                     </p>
                 </div>
@@ -111,7 +111,7 @@ const Home = () =>{
                 </div>
                 <div className="row aditional_row">
                     <div className="col-5 additional_content_box  "> 
-                        <h3 className="mt-3">Sample<br/>exclusivo</h3>
+                        <h3 className="mt-3 aditional_subtitle">Samples<br/>exclusivo</h3>
                         <p className="mt-3 aditional_text">
                             Al inscribirte, recibiras una coleccion exclusiva de samples seleccionados cuidadosamente para inspirarte
                             desde el primer dia. Estos samples te daran una base solida para comenzar tus primeras 
@@ -119,7 +119,7 @@ const Home = () =>{
                         </p>
                     </div>
                     <div className="col-5 additional_content_box "> 
-                        <h3 className="mt-3">Aprendizaje<br/>rapido</h3>
+                        <h3 className="mt-3 aditional_subtitle">Aprendizaje<br/>rapido</h3>
                         <p className="mt-3 aditional_text">
                             En tan solo un mes, te garantizamos que habras dominado las herramientas basicas de Ableton Live. Nuestro enfoque
                             pratico y personalizado te permitira progresar rapidamente y comenzar a crear tus propias pistas de inmediato
@@ -128,14 +128,14 @@ const Home = () =>{
                 </div>
                 <div className="row aditional_row ">
                     <div className="col-5 additional_content_box "> 
-                        <h3 className="mt-3">Flexibilidad<br/>total</h3>
+                        <h3 className="mt-3 aditional_subtitle">Flexibilidad<br/>total</h3>
                         <p className="mt-3 aditional_text">
                             Creemos en el poder de la autonomia del estudiante. Por eso, tu decides hasta cuando quieres tener clases. Te
                             ofrecemos la flexibiliadad de programar tus lecciones de acuerdo a tu propio ritmo y agenda
                         </p>
                     </div>
                     <div className="col-5 additional_content_box "> 
-                        <h3 className="mt-3">Variedad de opciones</h3>
+                        <h3 className="mt-3 aditional_subtitle">Variedad de <br/>opciones</h3>
                         <p className="mt-3 aditional_text">
                             Si prefieres explorar por tu cuenta primero, tambien ofrecemos acceso a una variedad de cursos pregrabados de 
                             diferentes generos e industrias, haciendo hincapie en todos los subgeneros de la musica electronica. Asi puedes
@@ -144,7 +144,7 @@ const Home = () =>{
                     </div>
                 </div>
                 <div className="row aditional_buton_row">
-                    <button type="button" className="btn btn-primary rounded-pill contact_aditional_btn ">!Quiero hacer el curso!</button>  
+                    <button type="button" className="btn btn-primary rounded-pill contact_aditional_btn ">¡Quiero hacer el curso!</button>  
                 </div>
             </div>
             
@@ -167,7 +167,7 @@ const Home = () =>{
                     </p>
                 </div>
                 <div className="row who_first_row mt-sm-5 mt-3">
-                    <p className="who_text">
+                    <p className="who_text aqua_text">
                         Recuerda, los grandes productores no nacen ¡se hacen! Con la dedicacion adecuada y la guia correcta, puedes
                         llevar tus sueños musicales mas alla de lo que alguna vez imaginaste
                     </p>
@@ -197,14 +197,14 @@ const Home = () =>{
                     <button type="button" className="btn btn-primary rounded-pill contact_examples_btn ">Escucha los ejemplos</button>  
                 </div>
                 <div className="row d-flex justify-content-center mt-5 mb-5">
-                    <h3 className="mt-md-5 join_text">
+                    <h3 className="mt-md-3  join_text">
                         ¡Unete a nosotros y preparate para transofrmar tus sueños musicales en realidad!
                     </h3>
                 </div>
             </div>
         </div>
         <div className="row contact_container m-0" ref={ContactRef}>
-            <div className="col-5 contact_form_col ">
+            <div className="col-5 col-md-6 contact_form_col ">
                 <div className="contact_form p-md-5 p-4 ">
                     <div class="mb-3">
                         <input type="text" class="form-control contact_input rounded-pill" id="exampleFormControlInput1" placeholder="Nombre y Apellido"/>
@@ -223,26 +223,26 @@ const Home = () =>{
                     </div>
                 </div>
             </div>
-            <div className="col-3 contact_info ms-md-5">
+            <div className="col-3 contact_info ms-lg-5">
                 <h2 className="contact_title">Contactanos</h2>
                 <div className="">
                     <li className=" contact_item">
                         <div class="circle me-2">
                             <i class="fa-regular fa-envelope icon"></i>    
                         </div>
-                        <p>email@mail.com</p>
+                        <p className="contact_text">email@mail.com</p>
                     </li>
                     <li className=" contact_item">
                         <div class="circle me-2">
                             <i class="fa-brands fa-whatsapp icon"></i> 
                         </div>
-                        <p>xxx xxx xxx xx</p>
+                        <p className="contact_text">xxx xxx xxx xx</p>
                     </li>
                     <li className="contact_item">
                         <div class="circle me-2">
                         <i class="fa-solid fa-location-dot icon"></i>
                         </div>
-                        <p>direccion</p>
+                        <p className="contact_text">direccion</p>
                     </li>
 
                 </div>

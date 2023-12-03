@@ -12,6 +12,9 @@
     border-bottom: 2px solid #d10359; /* Border properties */
         
 }
+.who_title, .aqua_text{
+    color: #6efbff;
+}
 
 .contact_who_btn, .contact_who_btn:after, .contact_who_btn:hover{
     background-color: #d10359;
@@ -87,7 +90,11 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    
+    .who_container{
+        background-color: #05051b;
+        height: auto;
+        padding-bottom: 3rem;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

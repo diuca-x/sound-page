@@ -22,6 +22,9 @@
 .contact_examples_btn, .contact_examples_btn:after, .contact_examples_btn:hover{
     background-color: #d10359;
 }
+.join_text{
+    color: #d10359;
+}
 
 
 
@@ -107,15 +110,23 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    
+    .example_text{
+        font-size: 1.5rem;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    
+    .contact_examples_row{
+        width: 30%;
+        margin-top: 2rem;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    
+    .contact_examples_row{
+        width: 23%;
+        margin-top: 2rem;
+    }
 }

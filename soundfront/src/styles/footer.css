@@ -66,19 +66,27 @@
 @media only screen and (min-width: 768px) {
     .footer{
         background-color: #05051b ;
-        height: 7rem;
         border-top: solid 3px #6efbff;
         
+    }
+    .footer_logo_container{
+        visibility: visible;
+        display: flex;
     }
     .footer_icons_container{
         display: flex;
         justify-content: end;
+        width: auto;
+        margin-bottom: auto;
+        margin-top: auto;
     }
     .footer_container{
        
         display: flex;
         justify-content: space-between;
+        flex-direction: row;
         align-items: center;
+        height: 7rem;
     }
     .footer_icon{
         font-size: 1.5em;

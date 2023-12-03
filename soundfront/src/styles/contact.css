@@ -181,55 +181,89 @@
         background-size: cover;
         background-position:50% 20%;
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         padding-bottom: 5rem;
-    }
-    .contact_form_col{
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .contact_form{
-        background-color: rgba(5, 5, 27, 0.7) ;
-        margin-top: 30%;
-    }
-    .submit_contact, .submit_contact:after, .submit_contact:hover{
-        background-color: #d10359;
-        width: 30%;
-    }
-    
-    
-    .submit_col{
-        display: flex;
-        margin-top: 3rem;
-       
     }
     .contact_info{
         display: flex;
         flex-direction: column;
         align-items: start;
         margin-bottom: 10rem;
-    
+        width: auto;
+        padding: 0;
     }
+    .contact_form_col{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 0;
+    }
+    .contact_form{
+        background-color: rgba(5, 5, 27, 0.7) ;
+        margin-top: 30%;
+        margin-left: 0;
+        
+    }
+    .submit_contact, .submit_contact:after, .submit_contact:hover{
+        background-color: #d10359;
+       
+    }
+    
+    .submit_col{
+        display: flex;
+        margin-top: 3rem;
+       
+    }
+    
     .contact_title{
         position: relative;
         margin-bottom: 3rem;
         width: 50%;
-        margin-top: 50%;
+        margin-top: 30%;
     }
     .contact_item{
         display: flex;
         flex-direction: row;
     }
+    .icon {
+        font-size: 1.5rem; /* Change the icon size as needed */
+        
+    }
+    .circle {
+        width: 2.5rem;
+        height:  2.5rem;
+    }
+    .contact_text{
+        font-size: 1.2rem;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    
+    .contact_form{
+       margin-right: 0;
+        
+    }
+    .submit_contact, .submit_contact:after, .submit_contact:hover{
+   
+        width: 45%;
+    }
+    .contact_title{
+        width: 50%;
+       
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    
+    .submit_contact, .submit_contact:after, .submit_contact:hover{
+   
+        width: 30%;
+    }
+    .contact_title{
+        margin-top: 50%;
+       
+    }
 }
