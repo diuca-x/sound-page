@@ -1,0 +1,86 @@
+.contact_container{
+    background-image: url("../img/littlepiano.jpg");
+    background-size: cover;
+    background-position:50% 20%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.contact_form_col{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contact_form{
+    background-color: rgba(5, 5, 27, 0.7) ;
+    margin-top: 30%;
+}
+.submit_contact, .submit_contact:after, .submit_contact:hover{
+    background-color: #d10359;
+    width: 30%;
+}
+
+
+.submit_col{
+    display: flex;
+    margin-top: 3rem;
+   
+}
+.contact_input{
+    border: #d10359 2px solid;
+    background-color: black;
+    color: white;
+}
+
+.contact_input::after, .contact_input::before, .contact_input:focus, .contact_input::placeholder{
+    background-color: black;
+    color: white;
+}
+
+
+.contact_message{
+    border-radius: 20px;
+    height: 8rem;
+}
+
+.contact_info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+.contact_title{
+    position: relative;
+    margin-bottom: 3rem;
+    width: 50%;
+    margin-top: 50%;
+}
+.contact_title::after{
+    
+    content: '';
+    display: flex;
+    position: absolute;
+    left: 40%;
+    margin-top: 1rem;
+    transform: translateX(-50%);
+    width: 70%; /* Width of the border */
+    border-bottom: 2px solid #d10359; /* Border properties */
+        
+}
+.circle {
+    width: 1.6rem;
+    height:  1.6rem;
+    background-color: #6efbff; /* Change the color as desired */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+.icon {
+    font-size: 0.9rem; /* Change the icon size as needed */
+    color: black;
+  }

@@ -6,8 +6,10 @@ import "../styles/expect.css";
 import "../styles/aditional.css";
 import "../styles/who.css";
 import "../styles/examples.css";
+import "../styles/contact.css";
 import computadora from "../img/computadora.png"
 import banner from "../img/banner.jpg"
+import logo from "../img/logo.png"
 
 
 const Home = () =>{
@@ -47,8 +49,9 @@ const Home = () =>{
 
     return(
         <>
+        <div className="container-fluid m-0 p-0">
         <div className="home-container"> 
-            <Navbar toRef = {toRef} />
+        <Navbar toRef = {toRef} />
             <div className=" text-start mt-sm-5 pt-sm-5 ms-sm-5 ps-sm-5  home_content_container">
                 <h1>¡Descubre tu pasion por la Produccion Musical con Ableton Live!</h1>
                 <h3 className="mt-4">Y preparate para firmar con una discografia en tan solo un mes!</h3>
@@ -185,11 +188,82 @@ const Home = () =>{
                 </div>
                 
                 <div className="row contact_examples_row">
-                    <button type="button" className="btn btn-primary rounded-pill contact_examples_btn ">Quiero hacer el curso!</button>  
+                    <button type="button" className="btn btn-primary rounded-pill contact_examples_btn ">Escucha los ejemplos</button>  
+                </div>
+                <div className="row mt-5">
+                    <h3 className="mt-5">
+                        ¡Unete a nosotros y preparate para transofrmar tus sueños musicales en realidad!
+                    </h3>
                 </div>
                 
 
             </div>
+        </div>
+        <div className="row contact_container m-0" ref={ExamplesRef}>
+            <div className="col-5 contact_form_col ">
+                <div className="contact_form p-5  ">
+                    <div class="mb-3">
+                        <input type="text" class="form-control contact_input rounded-pill" id="exampleFormControlInput1" placeholder="Nombre y Apellido"/>
+                    </div>
+                    <div class="mb-3  ">
+                        <input type="email" class="form-control contact_input rounded-pill" id="exampleFormControlInput1" placeholder="Email"/>
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" class="form-control contact_input rounded-pill" id="exampleFormControlInput1" placeholder="Telefono"/>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control contact_input contact_message " id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje"></textarea>
+                    </div>
+                    <div class="col-auto submit_col">
+                        <button type="submit" class="btn btn-primary mb-3 rounded-pill submit_contact">Enviar</button>
+                    </div>
+                </div>
+            </div>
+            <div className="col-3 contact_info ms-5">
+                <h2 className="contact_title">Contactanos</h2>
+                <div className="">
+                    <li className="d-flex">
+                        <div class="circle me-2">
+                            <i class="fa-regular fa-envelope icon"></i>    
+                        </div>
+                        <p>email@mail.com</p>
+                    </li>
+                    <li className="d-flex">
+                        <div class="circle me-2">
+                            <i class="fa-brands fa-whatsapp icon"></i> 
+                        </div>
+                        <p>xxx xxx xxx xx</p>
+                    </li>
+                    <li className="d-flex">
+                        <div class="circle me-2">
+                        <i class="fa-solid fa-location-dot icon"></i>
+                        </div>
+                        <p>direccion</p>
+                    </li>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <div class="container-fluid footer pt-3 m-0">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center mx-5 ">
+                <div class="col-4 d-flex align-items-center">
+                    <h1 className="" href="#"><img src={logo} className="logo" alt="..."/></h1>
+                </div>
+
+                <ul class="nav col-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3">
+                    <i class="fa-brands fa-facebook fa-xl text-white"></i>
+                </li>
+                <li class="ms-3">
+                    <i class="fa-brands fa-instagram fa-xl text-white"></i>
+                </li>
+                <li class="ms-3">
+                    <i class="fa-brands fa-linkedin-in fa-xl text-white"></i>
+                </li>
+                </ul>
+            </footer>
         </div>
         
         </>

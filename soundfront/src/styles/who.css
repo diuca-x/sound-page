@@ -1,7 +1,5 @@
 .who_container{
-    background-image: url("../img/piano.jpg");
-    background-size: cover;
-    background-position:50% 20%;
+    background-color: #05051b;
     height: 100vh;
 }
 .who_title{

@@ -58,6 +58,11 @@ h1,h2,h3,h4,p{
   background-size: cover;
   background-position:50% 60%;
 }
+.footer{
+  background-color: #05051b ;
+  height: 7rem;
+  border-top: solid 3px #6efbff;
+}
 
 
 /* Extra small devices (phones, 600px and down) */
